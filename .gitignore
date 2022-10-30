@@ -3,12 +3,12 @@ data/*
 *.wem
 .vscode/*
 .vs/*
-USING/Sounds/WORKING/*
-USING/Sounds/Depricated_Or_combined_in_new/*
-USING/Sounds/Silent_ALL_ship_guns_Prototype/*
-USING/Sounds/Silent_TESTING_SOUNDS/*
-USING/Sounds/Silent_Containers/*
-USING/Sounds/Localized_BNK_files/*
-USING/Sounds/Depricated Or combined in new/*
-USING/Sounds/Silense_Those_Voices_Cusomizer/GAMEDATA/*
-USING/Sounds/Silense_Those_Voices_Cusomizer/*.pak
+Sounds/WORKING/*
+Sounds/Depricated_Or_combined_in_new/*
+Sounds/Silent_ALL_ship_guns_Prototype/*
+Sounds/Silent_TESTING_SOUNDS/*
+Sounds/Silent_Containers/*
+Sounds/Localized_BNK_files/*
+Sounds/Depricated Or combined in new/*
+Sounds/Silense_Those_Voices_Cusomizer/GAMEDATA/*
+Sounds/Silense_Those_Voices_Cusomizer/*.pak
