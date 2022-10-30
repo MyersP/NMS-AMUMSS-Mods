@@ -36,16 +36,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxSlots", "48"}
                             }
                         },
-                        {
-                            ["PRECEDING_KEY_WORDS"]	= "ClassProbabilityData",
-                            ["REPLACE_TYPE"]		= "ALL",
-                            ["VALUE_CHANGE_TABLE"]	= {
-                                {"C", 0},
-                                {"B", 0},
-                                {"A", 0},
-                                {"S", 100},
-                            }
-                        },
+                        --{
+                        --    ["PRECEDING_KEY_WORDS"]	= "ClassProbabilityData",
+                        --    ["REPLACE_TYPE"]		= "ALL",
+                        --    ["VALUE_CHANGE_TABLE"]	= {
+                        --        {"C", 0},
+                        --        {"B", 0},
+                        --        {"A", 0},
+                        --        {"S", 100},
+                        --    }
+                        --},
                     }
                 }
             }

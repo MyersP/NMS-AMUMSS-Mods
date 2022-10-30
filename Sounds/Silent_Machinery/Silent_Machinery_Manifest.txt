@@ -1,0 +1,41 @@
+List of Sounds Removed 
+Atmosphere Harvester
+Base Beacon  
+Base Computer Open 
+Base Terminal  
+Batteries   
+BioFuel Reactor  
+Comunication Station Loop  
+Construction Terminal  
+Exocraft Summoning Station  
+Freighter HangarDoor Open   --new 1.0.1
+Freighter HangerDoor Close   --new 1.0.1
+Freighter Refiner Room  
+Freighter Refiner Running  
+Freighter Stellar Extractor  
+Freighter Storage   
+Freighter Teleporter  
+Gas Extractors 
+Harvester   
+Health Station  
+Item Beacon  
+Large Refiner   
+Medium Refiner  
+Metal Extractors 
+Mining AMU  
+Nexus Robo Arm   --new 1.0.1
+Nexus Teleporter  
+Personal Scanner 
+Plant Incubator  
+Player Customizer 
+Portable Refiner 
+Sales Terminal Loop   --new 1.0.1
+Signal Booster  
+Starship Outfitter  
+Suit Upgrade Terminal  
+Teleporter Main  
+Teleporter Start Stop  
+Teleportor  
+Terminal Generic  
+Weapon Tech Station   --new 1.0.1
+Weapon Terminal

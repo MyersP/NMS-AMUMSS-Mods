@@ -1,0 +1,88 @@
+List of Sounds Removed
+Action Confirmed    
+Base Beacon   
+Base Computer Open  
+Base Terminal
+Binoculars  
+Bio Ship Add Organ  
+BlackBox Open  
+Blueprint Known
+Capsule Collect 
+Collectable Calicishroom  
+Communication Hail
+Comunication Station Loop  
+Crates Barrels 
+Credits Increase  
+Epic Item  
+Explosion Resource Gather
+Flora Collect  
+Frigate Living Feed
+FrontEnd Enter 
+FrontEnd Exit  
+FrontEnd ProductsBuild  
+Frontend Back
+Frontend Select Generic  
+Frontend TechBuild  
+Frontend TextOverlays   
+Frontend Transfer  
+Health Station  
+HoloHub Ladder   
+Interactive Collect   
+Item Transfer To Suit
+Launch Confirmation
+Launch Notification 
+Manage Exosuit Inventory  
+Menu Incorrect
+Menu Option Switch
+Metal Formation Collect 
+Nanites Insufficient  
+Nanites Received 
+New Tech Woosh  
+Personal Scanner 
+Pickup Loot  
+Pickup Nitrogen Plant 
+Pickup Plant --Oxygen 
+Player Ship Ide  
+Player Take Out Gun 
+Quick Menu Close 
+Quick Menu No Charge  
+Quick Menu Open
+Quick Menu Tab
+Quick Menu Tech Charge  
+Rare Item  
+Recipe Receive  
+Record Uploaded  
+Resource Gather
+Reticle Lock  
+Reticule On Target  
+Select Generic 
+Ships Idle  
+Specials Insufficient 
+Tech Broken  
+Tech Installed  
+Teleport To Ship  
+Terminal Generic  
+UI BaseBuild RepairTech      --new 1.0.2
+UI BaseBuild RepairTech Error  --new 1.0.2
+UI Buy   
+UI ChoiceText Woosh  --new 1.0.2
+UI Click Generic  
+UI DecisionText Mouseover
+UI Dismantle  
+UI Error
+UI GameMode Hover   --new 1.0.2
+UI Knowledge Expanded  
+UI Message Generic
+UI Page Change  
+UI Pickup Resource
+UI Purchase  
+UI Refiner Decrease 
+UI Refiner Increase   
+UI Scrap Destroy  
+UI Shop 
+UI Tip  
+Vault Open Close
+Vegetable Collect  
+Weapon Found  
+Weapon Terminal  
+Word Learnt  

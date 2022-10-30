@@ -1,0 +1,120 @@
+List of Sounds Removed 
+Action Confirmed  
+Atmosphere Harvester  
+Base Beacon  
+Base Computer Open   
+Base Terminal  
+Batteries  
+Binoculars  
+Bio Ship Add Organ   
+BioFuel Reactor  
+BlackBox Open   
+Capsule Collect  
+Collectable Calicishroom  
+Comunication Station Loop  
+Construction Terminal  
+Crates Barrels  
+Credits Increase  
+Epic Item  
+Exocraft Summoning Station  
+Explosion Resource Gather  
+Flora Collect    
+Freighter HangarDoor Open
+Freighter HangerDoor Close 
+Freighter Refiner Room  
+Freighter Refiner Running   
+Freighter Stellar Extractor  
+Freighter Storage   
+Freighter Teleporter  
+Frigate Living Warpin 
+FrontEnd Enter 
+FrontEnd Exit  
+FrontEnd ProductsBuild  
+Frontend Select Generic  
+Frontend TechBuild  
+Frontend TextOverlays   
+Frontend Transfer    
+Gas Extractors  
+Harvester  
+Health Station  
+HoloHub Ladder    
+Interactive Collect  
+Item Beacon   
+Item Transfer To Suit  
+Large Refiner    
+Launch Notification  
+Manage Exosuit Inventory  
+Medium Refiner  
+Menu Incorrect  
+Menu Option Switch  
+Metal Extractors  
+Metal Formation Collect  
+Mining AMU   
+Nanites Insufficient  
+Nanites Received   
+New Tech Woosh  
+Nexus Robo Arm
+Nexus Teleporter
+Personal Scanner  
+Pickup Loot  
+Pickup Nitrogen Plant   
+Pickup Plant --Oxygen  
+Plant Incubator  
+Player Customizer  
+Player Ship Ide  
+Portable Refiner  
+Purchase UI  
+Quick Menu Close  
+Quick Menu No Charge   
+Quick Menu Open  
+Quick Menu Tab   
+Quick Menu Tech Charge  
+Rare Item    
+Recipe Receive  
+Record Uploaded   
+Resource Gather  --new 1.0.6
+Reticle Lock   
+Reticule On Target  
+Sales Terminal Loop  --new 1.0.6
+Select Generic  
+Ship Warp In   
+Ship Warp In Small  
+Ship Warp Out   
+Ship Warp Out Small 
+Ships Idle  
+Signal Booster    
+Specials Insufficient  
+Starship Outfitter    
+Suit Upgrade Terminal  
+Tech Broken  
+Tech Installed    
+Teleport To Ship  
+Teleporter Main    
+Teleporter Start Stop  
+Teleportor   
+Terminal Generic  
+UI BaseBuild RepairTech  --new 1.0.6
+UI BaseBuild RepairTech Error  --new 1.0.6
+UI Buy   
+UI ChoiceText Woosh  --new 1.0.6
+UI Click Generic  
+UI DecisionText Mouseover  --new 1.0.6
+UI Dismantle   
+UI Error  
+UI GameMode Hover  --new 1.0.6
+UI Knowledge Expanded 
+UI Message Generic  
+UI Page Change    
+UI Pickup Resource  
+UI Purchase    
+UI Refiner Decrease  
+UI Refiner Increase  
+UI Scrap Destroy   
+UI Shop    --new 1.0.6
+UI Tip
+Vault Open Close   
+Vegetable Collect  
+Weapon Found  
+Weapon Tech Station   --new 1.0.6 
+Weapon Terminal  
+Word Learnt  

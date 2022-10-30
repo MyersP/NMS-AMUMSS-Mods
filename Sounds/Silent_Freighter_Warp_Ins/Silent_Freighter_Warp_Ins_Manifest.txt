@@ -1,0 +1,6 @@
+List of Sounds Removed
+Ship Warp In   
+Ship Warp Out   
+Ship Warp In Small  
+Ship Warp Out Small 
+Frigate Living Warpin  
