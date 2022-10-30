@@ -4,7 +4,11 @@ data/*
 .vscode/*
 .vs/*
 USING/Sounds/WORKING/*
-USING/Sounds/WORKING/Silent ALL ship guns Prototype/*
-USING/Sounds/WORKING/Silent TESTING SOUNDS/*
-USING/Sounds/WORKING/Silent_Containers/*
-USING/Sounds/WORKING/Depricated Or combined in new/*
+USING/Sounds/Depricated_Or_combined_in_new/*
+USING/Sounds/Silent_ALL_ship_guns_Prototype/*
+USING/Sounds/Silent_TESTING_SOUNDS/*
+USING/Sounds/Silent_Containers/*
+USING/Sounds/Localized_BNK_files/*
+USING/Sounds/Depricated Or combined in new/*
+USING/Sounds/Silense_Those_Voices_Cusomizer/GAMEDATA/*
+USING/Sounds/Silense_Those_Voices_Cusomizer/*.pak
