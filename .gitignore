@@ -1,0 +1,10 @@
+bin/*
+data/*
+*.wem
+.vscode/*
+.vs/*
+USING/Sounds/WORKING/*
+USING/Sounds/WORKING/Silent ALL ship guns Prototype/*
+USING/Sounds/WORKING/Silent TESTING SOUNDS/*
+USING/Sounds/WORKING/Silent_Containers/*
+USING/Sounds/WORKING/Depricated Or combined in new/*
