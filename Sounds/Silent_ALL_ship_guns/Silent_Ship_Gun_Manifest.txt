@@ -1,0 +1,16 @@
+List of Sounds Removed 
+Freighter Gun 
+Freighter Turret All
+NPC Ship Laser
+NPC Ship Hit Alert   
+Ship Cyclotron  
+Ship Guns  
+Ship Guns Main
+Ship InfraKnife  
+Ship Laser
+Ship Missile  
+Ship Out Of Ammo 
+Ship Positron  
+Ship Weapon Change 
+Small Ship Laser 
+Change to the Projectiles file. 

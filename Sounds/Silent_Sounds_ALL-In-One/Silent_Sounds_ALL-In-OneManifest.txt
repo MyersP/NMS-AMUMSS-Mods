@@ -4,13 +4,15 @@ Atmosphere Harvester
 Base Beacon  
 Base Computer Open   
 Base Terminal  
-Batteries  
+Batteries 
+Blueprint Known 
 Binoculars  
 Bio Ship Add Organ   
 BioFuel Reactor  
 BlackBox Open   
 Capsule Collect  
-Collectable Calicishroom  
+Collectable Calicishroom   
+Communication Hail 
 Comunication Station Loop  
 Construction Terminal  
 Crates Barrels  

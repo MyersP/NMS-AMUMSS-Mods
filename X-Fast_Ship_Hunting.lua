@@ -3,7 +3,7 @@
 -- Date Created: Jul 03, 2022
 -- Last Updated: Aug 02, 2022
 --------------------------------------------------------------------------------
-modName		= "X-Fast Ship Hunting.pak"
+modName		= "X-Fast_Ship_Hunting.pak"
 modAuthor	= "Lowkie"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
 gameVer		= "3.99"

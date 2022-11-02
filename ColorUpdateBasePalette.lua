@@ -202,10 +202,77 @@ FreighterPaintColours =
 	{R=151.99989,	G=200.00007,	B=156.000075},	--62
 	{R=73.99998,	G=114.000045,	B=116.00001},	--63
 	{R=117.00012,	G=149.999925,	B=128.99991},   --64
- }
- 
-UnderCoatColourValues =
+}
+--[[UnderCoatColourValues =
 {--Personal List
+    {R=255,   G=255,    B=255}, --1
+    {R=255,   G=255,    B=255}, --2
+    {R=255,   G=255,    B=255}, --3
+    {R=255,   G=255,    B=255}, --4
+    {R=255,   G=255,    B=255}, --5
+    {R=255,   G=255,    B=255}, --6
+    {R=255,   G=255,    B=255}, --7
+    {R=255,   G=255,    B=255}, --8
+    {R=255,   G=255,    B=255}, --9
+    {R=255,   G=255,    B=255}, --10
+    {R=255,   G=255,    B=255}, --11
+    {R=255,   G=255,    B=255}, --12
+    {R=255,   G=255,    B=255}, --13
+    {R=255,   G=255,    B=255}, --14
+    {R=255,   G=255,    B=255}, --15
+    {R=255,   G=255,    B=255}, --16
+    {R=255,   G=255,    B=255}, --17
+    {R=255,   G=255,    B=255}, --18
+    {R=255,   G=255,    B=255}, --19
+    {R=255,   G=255,    B=255}, --20
+    {R=255,   G=255,    B=255}, --21
+    {R=255,   G=255,    B=255}, --22
+    {R=255,   G=255,    B=255}, --23
+    {R=255,   G=255,    B=255}, --24
+    {R=255,   G=255,    B=255}, --25
+    {R=255,   G=255,    B=255}, --26
+    {R=255,   G=255,    B=255}, --27
+    {R=255,   G=255,    B=255}, --28
+    {R=255,   G=255,    B=255}, --29
+    {R=255,   G=255,    B=255}, --30
+    {R=255,   G=255,    B=255}, --31
+    {R=255,   G=255,    B=255}, --32
+    {R=255,   G=255,    B=255}, --33
+    {R=255,   G=255,    B=255}, --34
+    {R=255,   G=255,    B=255}, --35
+    {R=255,   G=255,    B=255}, --36
+    {R=255,   G=255,    B=255}, --37
+    {R=255,   G=255,    B=255}, --38
+    {R=255,   G=255,    B=255}, --39
+    {R=255,   G=255,    B=255}, --40
+    {R=255,   G=255,    B=255}, --41
+    {R=255,   G=255,    B=255}, --42
+    {R=255,   G=255,    B=255}, --43
+    {R=255,   G=255,    B=255}, --44
+    {R=255,   G=255,    B=255}, --45
+    {R=255,   G=255,    B=255}, --46
+    {R=255,   G=255,    B=255}, --47
+    {R=255,   G=255,    B=255}, --48
+    {R=255,   G=255,    B=255}, --49
+    {R=255,   G=255,    B=255}, --50
+    {R=255,   G=255,    B=255}, --51
+    {R=255,   G=255,    B=255}, --52
+    {R=255,   G=255,    B=255}, --53
+    {R=255,   G=255,    B=255}, --54
+    {R=255,   G=255,    B=255}, --55
+    {R=255,   G=255,    B=255}, --56
+    {R=255,   G=255,    B=255}, --57
+    {R=255,   G=255,    B=255}, --58
+    {R=255,   G=255,    B=255}, --59
+    {R=255,   G=255,    B=255}, --60
+    {R=255,   G=255,    B=255}, --61
+    {R=255,   G=255,    B=255}, --62
+    {R=255,   G=255,    B=255}, --63
+    {R=255,   G=255,    B=255}, --64
+}]]
+
+UnderCoatColourValues =
+ {--Personal List
     {R=0,   G=0,    B=0}, --1
     {R=0,   G=0,    B=0}, --2
     {R=0,   G=0,    B=0}, --3
@@ -270,7 +337,7 @@ UnderCoatColourValues =
     {R=0,   G=0,    B=0}, --62
     {R=0,   G=0,    B=0}, --63
     {R=0,   G=0,    B=0}, --64
-} 
+}
 
 MetalColourValues =
 {--Personal List R,G,B True values
@@ -306,7 +373,7 @@ MetalColourValues =
     {R=185,     G=0,		B=0},	    --30
     {R=185,     G=0,		B=0},	    --31
     {R=95,      G=15,	    B=230},	    --32
-    {R=95,      G=15,	    B=230},	    --33
+    {R=255,     G=255,		B=255},	    --33
     {R=95,      G=15,	    B=230},	    --34
     {R=95,      G=15,   	B=230},	    --35
     {R=95,      G=15,	    B=230},	    --36
@@ -349,7 +416,7 @@ Full_Palette_List =
    -- {id='BioShip_Underbelly',   c='_16', p=GeneralColourValues},
    -- {id='BioShip_Cockpit',      c='_8' , p=GeneralColourValues},
     {id='Metal',                c='All', p=MetalColourValues},
-    {id='Plastic',              c='All', p=GeneralColourValues},
+    {id='Plastic',              c='All', p=MetalColourValues},
     
     {id='Freighter',            c='All', p=GeneralColourValues},
     {id='FreighterPaint',       c='All', p=FreighterPaintColours},
@@ -360,7 +427,7 @@ Full_Palette_List =
 Legacy_Palette_List = {
     {id='Paint',    c='All', p=MetalColourValues},
     {id='Metal',    c='All', p=MetalColourValues},
-    {id='Plastic',  c='All', p=GeneralColourValues},
+    {id='Plastic',  c='All', p=MetalColourValues},
 }
 
 function ConvertToNMS(RGB) --also truncates at 6 decimal places
@@ -412,7 +479,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ColorChangeBase_New_Metal_01.pak",
+["MOD_FILENAME"] 			= "ColorChangeBase_New_Metal_02.pak",
 ["MOD_AUTHOR"]				= "",
 ["MOD_DESCRIPTION"]			= "",
 ["MODIFICATIONS"] 			= 
@@ -421,11 +488,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	="METADATA\SIMULATION\SOLARSYSTEM\COLOURS\BASECOLOURPALETTES.MBIN",
+					["MBIN_FILE_SOURCE"] 	="METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] 	= AddNewColoursToChangeTable(Full_Palette_List)
                 },
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\COLOURS\LEGACYBASECOLOURPALETTES.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\LEGACYBASECOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] 	= AddNewColoursToChangeTable(Legacy_Palette_List)
                 },
             },

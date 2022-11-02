@@ -1,0 +1,5 @@
+<psarc>
+	<create archive="Silent Inventory Sounds 1.0.0.pak" overwrite="true">
+		<directory path="AUDIO"/>
+	</create>
+</psarc>
