@@ -2,13 +2,19 @@ bin/*
 data/*
 *.wem
 .vscode/*
-.vs/*
-Sounds/WORKING/*
-Sounds/Depricated_Or_combined_in_new/*
-Sounds/Silent_ALL_ship_guns_Prototype/*
-Sounds/Silent_TESTING_SOUNDS/*
-Sounds/Silent_Containers/*
-Sounds/Localized_BNK_files/*
-Sounds/Depricated Or combined in new/*
-Sounds/Silense_Those_Voices_Cusomizer/GAMEDATA/*
-Sounds/Silense_Those_Voices_Cusomizer/*.pak
+.vs/*Sounds/Build_Sound_Mod.lnk
+Sounds/Depricated Or combined in new
+Sounds/Depricated_Or_combined_in_new
+Sounds/Localized_BNK_files
+Sounds/Silense_Those_Voices_Cusomizer
+Sounds/Silent_ALL_ship_guns
+Sounds/Silent_Containers
+Sounds/Silent_Crop_Harvest
+Sounds/Silent_Freighter_Hangar_Doors
+Sounds/Silent_Freighter_Warp_Ins
+Sounds/Silent_Machinery
+Sounds/Silent_Solar_Sail_Ships_Mechanics
+Sounds/Silent_Some_Inventory_Sounds
+Sounds/Silent_Sounds_ALL-In-One
+Sounds/Silent_TESTING_SOUNDS
+Sounds/WORKING
