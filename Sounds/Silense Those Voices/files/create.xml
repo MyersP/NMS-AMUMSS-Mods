@@ -1,5 +1,0 @@
-<psarc>
-	<create archive="__ShutUp.pak" overwrite="true">
-		<directory path="/AUDIO"/>
-	</create>
-</psarc>
