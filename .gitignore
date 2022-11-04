@@ -2,6 +2,8 @@ bin/*
 data/*
 *.wem
 .vscode/*
+.git
+.vs
 .vs/*Sounds/Build_Sound_Mod.lnk
 Sounds/Depricated Or combined in new
 Sounds/Depricated_Or_combined_in_new
@@ -18,3 +20,4 @@ Sounds/Silent_Some_Inventory_Sounds
 Sounds/Silent_Sounds_ALL-In-One
 Sounds/Silent_TESTING_SOUNDS
 Sounds/WORKING
+UltraBaseBuilding
