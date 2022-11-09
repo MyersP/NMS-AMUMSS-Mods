@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
-					["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
+					["MBIN_FILE_SOURCE"]	= "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN",
 					["EXML_CHANGE_TABLE"]	= {
 						{
 							-- OutpostSpawns controls the waves bound for Planetary Trading posts
@@ -96,7 +96,7 @@ mergeManagerEXML = {}
 if #shipsToRemove > 0 then
 	local shipSpawnFilter = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	shipSpawnFilter[#shipSpawnFilter + 1] = {
-		["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN",
+		["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SPACE\\AISPACESHIPMANAGER.MBIN",
 		["EXML_CHANGE_TABLE"] = shipsToRemove,
 		-- DO NOT MERGE HERE; Use the mergeManagerEXML table above
 	}
