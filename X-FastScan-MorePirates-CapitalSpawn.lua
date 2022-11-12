@@ -30,9 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TorchFoV",					"360"}, -- Original "100"	
 								{"TorchStrength",				"2"},	-- Original "4"
 								{"TorchOffsetY",				"1"},	-- Original "0.5"
-								{"TorchOffsetZ",				"-1"},	-- Original "-0.5							
-								--{"WarpsBetweenBattles",			"1"},	--Default 5? for freighter battles
-								{"HoursBetweenBattles",			"5"},	--Default 3? for freighter battles	
+								{"TorchOffsetZ",				"-1"},	-- Original "-0.5
 								--Goes with in PERSONALIZED_BetterShipAI
 								--{"FreighterSpawnRate",					"100"},	--Default ?  for freighter battles
 								
@@ -193,12 +191,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"150000","15000"},--Default 150000
 								{"1600000","160000"},--Default 1600000  The lower the more interest
 							}
-						},	
+						},		
+						{							
+							["PRECEDING_KEY_WORDS"] = {"PlanetPirateTimers","High"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{								
+								{"x","500"},--Default 800
+								{"y","750"},--Default 1000
+							}
+						},
+						{							
+							["PRECEDING_KEY_WORDS"]	= {"PlanetPirateTimers","Normal"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{								
+								{"x","800"},--Default 1000
+								{"y","1000"},--Default 1400
+							}
+						},
 						{							
 							["PRECEDING_KEY_WORDS"] = {"SpacePirateTimers","High"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{								
-								{"x","30"},--Default 60
+								{"x","30"},--Default 300
 								{"y","150"},--Default 300
 							}
 						},
@@ -206,18 +220,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"SpacePirateTimers","Normal"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{								
-								{"x","60"},--Default 120
-								{"y","225"},--Default 450
+								{"x","60"},--Default 300
+								{"y","225"},--Default 500
 							}
 						},
-						{	
+						--[[ {	
 							["PRECEDING_KEY_WORDS"]	= {"SpacePirateTimers","Low"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{								
-								{"x","90"},--Default 180
+								{"x","90"},--Default 400
 								{"y","300"},--Default 600
 							}
-						},
+						}, ]]
 						-- {	--Removed in NMS 4.0
 							-- ["PRECEDING_KEY_WORDS"]	= {"HardSpacePirateTimers","High"},							
 							-- ["VALUE_CHANGE_TABLE"] 	= 

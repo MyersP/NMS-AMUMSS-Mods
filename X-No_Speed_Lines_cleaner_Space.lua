@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "X-No Speed Lines cleaner Space.pak", 
+	["MOD_FILENAME"]	= "X-No_Speed_Lines_cleaner_Space.pak", 
 	["MOD_AUTHOR"]		= "Personal",
 	["NMS_VERSION"]		= "3.99",	-- NMS version when first scripted
 	["MOD_DESCRIPTION"]	= "No Speed Lines cleaner Space",
@@ -43,29 +43,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				
-				--{
-				--	["MBIN_FILE_SOURCE"] = 
-				--	{
-				--		"MODELS\\EFFECTS\\LINES\\SPEEDLINEMATERIAL.MATERIAL.MBIN",
-				--		"MODELS\\EFFECTS\\LINES\\SPEEDLINE2MATERIAL.MATERIAL.MBIN",
-				--		"MODELS\\EFFECTS\\LINES\\SPEEDLINE3MATERIAL.MATERIAL.MBIN",
-				--	},
-				--	["EXML_CHANGE_TABLE"] = 
-				--	{
-				--		{
-				--			-- no more speed lines
-				--			["SPECIAL_KEY_WORDS"] = {"Name", "Line"},
-				--			["REPLACE_TYPE"] = "ALL",
-				--			["VALUE_CHANGE_TABLE"] = 
-				--			{
-				--				{"Class", ""},
-				--			},
---
-				--		},
-				--	},
-				--},
-				
 				{
+					["MBIN_FILE_SOURCE"] = 
+					{
+						"MODELS\\EFFECTS\\LINES\\SPEEDLINEMATERIAL.MATERIAL.MBIN",
+						"MODELS\\EFFECTS\\LINES\\SPEEDLINE2MATERIAL.MATERIAL.MBIN",
+						"MODELS\\EFFECTS\\LINES\\SPEEDLINE3MATERIAL.MATERIAL.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{
+							-- no more speed lines
+							["SPECIAL_KEY_WORDS"] = {"Name", "Line"},
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"Class", ""},
+							},
+						},
+					},
+				},
+				
+				--[[ {
 					["MBIN_FILE_SOURCE"] = 
 					{
 						"MODELS\\EFFECTS\\SPEEDLINES\\MINIJUMPSPEEDLINES1.SPEEDLINE.MBIN",
@@ -82,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 					},
-				},				
+				},	 ]]			
 			},	
 		}
 	}	
