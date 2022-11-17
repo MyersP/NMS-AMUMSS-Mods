@@ -17,21 +17,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-                                {"DisableContinuousSaving",         "True"},
-								{"DisableSaveSlotSorting", 			"True"},	--Default False
-								{"SkipAbandonedFreighterUnlocking", "True"},	--Default False
-								{"SkipIntro", 						"True"},	--Default False
-								{"SkipLogos", 						"True"},	--Default False
-                                --{"SkipPlanetDiscoverOnBoot",        "True"},--Default False
-                                --{"EverythingIsKnown",               "True"},--Default False
-                                {"SkipTutorial",                    "True"},--Default False
-                                {"UnlockAllSeasonRewards",          "True"},--Default False
-                                {"UnlockAllTwitchRewards",          "True"},--Default False
-                                {"UnlockAllStories",                "True"},--Default False
-                                {"DisableBaseBuildingLimits",    "True"},
-								--{"DisableBasePowerRequirements", "True"},		
-								{"BaseDownloadTimeout",          "120"}, --ORIGINAL 40
+                                {"DisableContinuousSaving",         	"True"},
+								{"DisableSaveSlotSorting", 				"True"},	--Default False
+								{"SkipAbandonedFreighterUnlocking",	 	"True"},	--Default False
+								{"SkipIntro", 							"True"},	--Default False
+								{"SkipLogos", 							"True"},	--Default False
+								{"AlwaysAllowFreighterInventoryAccess", "True"},	--Default False
+								{"BootLogoFadeRate",					"0.5"},	--Default 2.5
+								--{"UnlockAllStories", 					"True"},	--Default False
+                                {"SkipTutorial",                    	"True"},--Default False
+                                {"DisableBaseBuildingLimits",    		"True"},
+								{"BaseDownloadTimeout",          		"120"}, --ORIGINAL 40
+                                --{"OverrideServerSeasonNumber", "2"},--DID NOT WORK
+                               -- {"OverrideServerSeasonEndTime", "1669795200"},--DID NOT WORK
+                                --{"ForceScanEventsToGoPrime",         	"True"},--Default False
                                 --{"",                    "True"},--Default False
+                                --dont work{"UnlockAllSeasonRewards",          "True"},--Default False
+                                --dont work{"UnlockAllTwitchRewards",          "True"},--Default False
+                                --dont work{"UnlockAllStories",                "True"},--Default False
+								--{"DisableBasePowerRequirements", "True"},		
+                               --dont work{"SkipPlanetDiscoverOnBoot",        "True"},--Default False
+                                --dont work{"EverythingIsKnown",               "True"},--Default False
                                 
 							}
 						}

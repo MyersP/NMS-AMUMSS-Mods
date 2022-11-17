@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "R.pak",
 ["MOD_AUTHOR"]				= "Lowkie",
 ["LUA_AUTHOR"]				= "Lowkie",
+["MOD_BATCHNAME"]			= "X-Signal Booster Pirate Rewards",
 ["NMS_VERSION"]				= "3.99",
 ["MODIFICATIONS"] 			=
 	{

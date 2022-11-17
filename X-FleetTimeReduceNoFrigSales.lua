@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"MaxPurchaseDistance", "1000"}, --Default 1000 
 								--{"TimeTakenForExpeditionEvent_Easy", "450"}, --Default 900  mod 450
 								--{"TimeTakenForExpeditionEvent",		"1000"}, --Default 5400 mod 1000
-								{"PercentChangeOfFrigateBeingPurchasable",	"0"}, --Default 60
+								{"PercentChangeOfFrigateBeingPurchasable",	"80"}, --Default 60
 								--{"NumberOfExpeditionChoices",	"12"}, --Default 5   5 is max
 								--{"MinGapBetweenExpeditionLogEntries",	"201"}, --Default 201
 								--{"MaxGapBetweenExpeditionLogEntries",	"301"}, --Default 301

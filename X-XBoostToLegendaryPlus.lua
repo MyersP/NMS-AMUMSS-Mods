@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"},
+					["MBIN_FILE_SOURCE"] 	= {"METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
                         {
@@ -157,8 +157,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"] = 1,							
                             ["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"ValueMin",	"12"}, --Default 1
-								{"ValueMax",	"15"}  --Default 5
+								{"ValueMin",	"15"}, --Default 1
+								{"ValueMax",	"20"}  --Default 5
 							},
 						},						
 						{	--ReloadTime
@@ -263,7 +263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{		
 								{"AlwaysChoose",	"True"}, --Default False
 								{"NumStatsMin", 	"4"},	 --Default 3
-								{"NumStatsMax", 	"3"},	 --Default 4
+								{"NumStatsMax", 	"4"},	 --Default 4
 							},
 						},						
 						{	--Scan_Radius
@@ -271,8 +271,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"]          = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"ValueMin",	"1.75"},   --Default 1.05
-								{"ValueMax",	"1.75"} --Default 1.5
+								{"ValueMin",	"2.25"},   --Default 1.05
+								{"ValueMax",	"2.25"} --Default 1.5
 								--2-2.75 = 18,237 target 21  
 							},
 						},
@@ -437,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"]          = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"ValueMin",	"20"}, --Default 1
+								{"ValueMin",	"25"}, --Default 1
 								{"ValueMax",	"30"}  --Default 6
 							},
 						},
@@ -501,8 +501,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"]          = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"ValueMin",	"10"}, --Default 1->5->7
-								{"ValueMax",	"15"}  --Default 4->6->8
+								{"ValueMin",	"12"}, --Default 1->5->7
+								{"ValueMax",	"20"}  --Default 4->6->8
 							},
 						},
 						{	--FireRate
@@ -510,7 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"]          = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"ValueMin",	"1.2"}, --Default 1
+								{"ValueMin",	"1.5"}, --Default 1
 								{"ValueMax",	"1.5"}  --Default 1.2
 							},
 						},
@@ -533,7 +533,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
                         
-						{--UP_CANNX -- ???
+						{--UP_CANNX -- neutron cannon???
 							["SPECIAL_KEY_WORDS"]	= {"ID", "UP_CANNX"},
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -548,8 +548,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"]          = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"ValueMin",	"40"}, --Default 5
-								{"ValueMax",	"50"}  --Default 15
+								{"ValueMin",	"25"}, --Default 5
+								{"ValueMax",	"30"}  --Default 15
 							},
 						},
 						{	--Charge 1
@@ -566,8 +566,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"]          = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"ValueMin",	"10"},  --Default 5
-								{"ValueMax",	"50"}  --Default 25
+								{"ValueMin",	"30"},  --Default 5
+								{"ValueMax",	"30"}  --Default 25
 							},
 						},
 						{	--Charge Time
@@ -809,8 +809,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP"]          = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"ValueMin",	"1.1"}, --Default 1.001
-								{"ValueMax",	"1.1"}  --Default 1.026
+								{"ValueMin",	"1.01"}, --Default 1.001
+								{"ValueMax",	"1.01"}  --Default 1.026
 								--1.15 = 12 --2.1=110 --1.5=50 --1.8=59 --expected 80, maybe remembered wrong
 								--1.85 = 85
 								--1.9=90
@@ -880,15 +880,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 									--would very quickly kill anything in a shot or two.
 							},
 						},
-						-- {	--Fire Rate
-							-- ["SPECIAL_KEY_WORDS"]	= {"ID", "UP_SSHOTX", "StatLevels", "Ship_Weapons_Guns_Rate"},
-							-- ["SECTION_UP"]          = 1,
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {	
-								-- {"ValueMin",	"0.75"}, --Default 1.05
-								-- {"ValueMax",	"0.75"}  --Default 1.1	
-							-- },
-						-- },
+						{	--Fire Rate
+							["SPECIAL_KEY_WORDS"]	= {"ID", "UP_SSHOTX", "StatLevels", "Ship_Weapons_Guns_Rate"},
+							["SECTION_UP"]          = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{"ValueMin",	"1.2"}, --Default 1.05
+								{"ValueMax",	"1.2"}  --Default 1.1	
+							},
+						},
 						{	--HeatTime
 							["SPECIAL_KEY_WORDS"]	= {"ID", "UP_SSHOTX", "StatsType","Ship_Weapons_Guns_HeatTime"},
 							["SECTION_UP"]          = 1,

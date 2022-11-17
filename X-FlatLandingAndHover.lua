@@ -2,15 +2,15 @@ EngineMinSpeed = "0.001"
 
 SpaceEngineMaxSpeed = "400" --800 dropping to 200 up to 400
 SpaceEngineBoostMaxSpeed = "3100" --3100 dropping to 2400 raising 3100
-SPACEFALLOFF = "0.2" --Original "0.7"
+SPACEFALLOFF = "0.001" --Original "0.7" 0.01 did not seem to keep speed up
 
 CombatEngineMaxSpeed = "300" --300 dropping to 90 up to 150
 CombatEngineBoostMaxSpeed = "2400" --2200 raising to 2400
-COMBATFALLOFF = "0.3" --Original "0.7"
+COMBATFALLOFF = "0.1" --Original "0.7"
 
 PlanetEngineMaxSpeed = "250" --450 dropping to 150 up to 250
 PlanetEngineBoostMaxSpeed = "500" --700 dropping to 250 up to 500
-PLANETFALLOFF = "0.4" --Original "0.7"
+PLANETFALLOFF = "0.3" --Original "0.7"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {

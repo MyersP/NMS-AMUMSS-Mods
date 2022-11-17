@@ -30,17 +30,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TorchFoV",					"360"}, -- Original "100"	
 								{"TorchStrength",				"2"},	-- Original "4"
 								{"TorchOffsetY",				"1"},	-- Original "0.5"
-								{"TorchOffsetZ",				"-1"},	-- Original "-0.5
-								--Goes with in PERSONALIZED_BetterShipAI
-								--{"FreighterSpawnRate",					"100"},	--Default ?  for freighter battles
-								
-                                --New Testing
-                                --{"TerrainResourceScanTime",		"30"},--Default 30 --new..
-                                --{"ScannerMarkerFadeTime",			"120"},	--Default 120 does NOT affect freighter scans
-                                {"ScannerSmallMarkerFadeTime",			"800"},	--Default 5 
-                                --{"ScannerPhysicsProbeAABBSize",			"25"},	--Default 25 
-                                --{"ScannerAnalyzeFXRate",			"0.5"},	--Default 0.5 
-                                {"ScannerSubstanceTimePerTrigger",			"150"},	--Default 35 --changes how long ore outlines lasts 300 seemed long						
+								{"TorchOffsetZ",				"-1"},	-- Original "-0.5					
+								{"WarpsBetweenBattles",			"1"},	--Default 5? for freighter battles
+								{"HoursBetweenBattles",			"0"},	--Default 3? for freighter battles	
 							}
 						},	
 						{							

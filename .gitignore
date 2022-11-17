@@ -18,6 +18,7 @@ Sounds/Silent_Machinery
 Sounds/Silent_Solar_Sail_Ships_Mechanics
 Sounds/Silent_Some_Inventory_Sounds
 Sounds/Silent_Sounds_ALL-In-One
+Sounds/Silent_Ship_Pulse_Mini_Warp
 Sounds/Silent_TESTING_SOUNDS
 Sounds/WORKING
 UltraBaseBuilding
@@ -25,3 +26,9 @@ Others_mods
 Extra_Files_Needed/X-Black carbon true icons.lua
 Extra_Files_Needed/ModExtraFilesToInclude _zBlack crystals true icons NO WARP
 REDMAS_GAME_OVERHAUL_GENERATOR
+UltraBaseBuilding/++++++BuildFrame_RecTUM.lua
+UltraBaseBuilding/+++++KibblesNBits_METADATA.lua
+UltraBaseBuilding/UltraBaseBuilding.lua
+~~~~BuildFrame_Comp.pak
+UltraBaseBuilding/++++++BuildFrame_RecTUM.lua
+UltraBaseBuilding/+++++KibblesNBits_METADATA.lua

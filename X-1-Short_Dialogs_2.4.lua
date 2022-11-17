@@ -1,6 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= "Short Dialogs.pak",
 	["MOD_DESCRIPTION"]	= "Reduces shop dialogs to 1 page.",
+    ["MOD_BATCHNAME"]	= "X-Signal Booster Pirate Rewards",
 	["MOD_AUTHOR"]		= "Lo2k",
 	["LUA_AUTHOR"]		= "Droseran",
 	["NMS_VERSION"]		= "3.99",

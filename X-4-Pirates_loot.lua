@@ -325,7 +325,7 @@ local new_reward = {
 		}
 	},]]
     {--- Trader loot    SHOULD BE AN UPDATE NOT AN ADD--TRADERLOOT Copy?-
-		id			= 'KILLED_CIV',--Current is -1 standing
+		id			= 'TRADERLOOT',--Current is -1 standing
 		replacement	= true,
 		choice		= 'SelectAlways',--SelectAlways
 		zeroseed	= true,
@@ -335,8 +335,8 @@ local new_reward = {
 			{id='SPACEGUNK3',		n=90,	x=299,	c=80,	f=R_Substance},
 			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
 			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=20,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='SCRAP_GOODS',	    		x=1,	c=150,	f=R_Product},
+			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=20,	f=R_Product},
+			{id='SCRAP_GOODS',	    		x=1,	c=15,	f=R_Product},
 			{id='SCRAP_TECH',	    		x=1,	c=10,	f=R_Product},
 			{id='SCRAP_WEAP',	    		x=1,	c=5,	f=R_Product},
 			{id='TRA_ALLOY1',		n=15,	x=25,	c=100,	f=R_Product},
@@ -387,7 +387,7 @@ local new_reward = {
 			--id					Min		Max		%		function
 			{id='SHIPCHARGE',		    	x=1,	c=50,	f=R_Product},
 			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=20,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
+			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=20,	f=R_Product},
 			{id='SCRAP_GOODS',	        	x=1,	c=5,	f=R_Product},
 			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},
 			{id='SCRAP_WEAP',	        	x=1,	c=15,	f=R_Product},
@@ -399,13 +399,13 @@ local new_reward = {
 			{id='EX_GREEN',			n=150,	x=250,	c=50,	f=R_Substance},
 			{id='EX_BLUE',			n=120,	x=220,	c=50,	f=R_Substance},
 			{id='SHIPBLOB_NAME_L',					c=50,	f=R_ProcTechPirate},
-			{id='SHIPMINIGUN_NAME_L',				c=20,	f=R_ProcTechPirate},
-			{id='SHIPSHOTGUN_NAME_L',				c=20,	f=R_ProcTechPirate},
-			{id='SHIPGUN1_NAME_L',					c=20,	f=R_ProcTechPirate},
-			{id='ION1_NAME_L',						c=20,	f=R_ProcTechPirate},
-			{id='SHIPJUMP_NAME_L',					c=20,	f=R_ProcTechPirate},
-			{id='LAUNCHER_NAME_L',					c=20,	f=R_ProcTechPirate},
-			{id='SHIPSHIELD_NAME_L',				c=20,	f=R_ProcTechPirate},
+			{id='SHIPMINIGUN_NAME_L',				c=10,	f=R_ProcTechPirate},
+			{id='SHIPSHOTGUN_NAME_L',				c=10,	f=R_ProcTechPirate},
+			{id='SHIPGUN1_NAME_L',					c=10,	f=R_ProcTechPirate},
+			{id='ION1_NAME_L',						c=10,	f=R_ProcTechPirate},
+			{id='SHIPJUMP_NAME_L',					c=10,	f=R_ProcTechPirate},
+			{id='LAUNCHER_NAME_L',					c=10,	f=R_ProcTechPirate},
+			{id='SHIPSHIELD_NAME_L',				c=10,	f=R_ProcTechPirate},
 			{id='Salvage',			r='Rare',		c=60,	f=R_Procedural},
 			{id='DismantleTech',	r='Rare',		c=80,	f=R_Procedural},
 			{id='Units',			n=1800,	x=3000,	c=100,	f=R_Money},
@@ -469,13 +469,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
             EXML_CHANGE_TABLE 	= AddNewRewardsToChangeTable()
         },
         {
-            MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/REWARDTABLE.MBIN',
+            MBIN_FILE_SOURCE	= 'METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN',
             EXML_CHANGE_TABLE	=
                     {            
-                       --[[  {
+                        {
 							["SPECIAL_KEY_WORDS"]  = {"Id", "KILLED_CIV"},
 							["REMOVE"] = "SECTION",
-						}, ]]
+						}, 
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Id", "STD_DEC_EXP"},
 							["REMOVE"] = "SECTION",
@@ -491,7 +491,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     }
         }, 
         {
-            MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SPACE/AISPACESHIPATTACKDATATABLE.MBIN',
+            MBIN_FILE_SOURCE	= 'METADATA\\SIMULATION\\SPACE\\AISPACESHIPATTACKDATATABLE.MBIN',
             EXML_CHANGE_TABLE	= 
             {
                 {--MAKE
@@ -569,7 +569,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     PRECEDING_KEY_WORDS = 'Definitions',
                     SPECIAL_KEY_WORDS	= {'Id', 'TRADER'},
                     VALUE_CHANGE_TABLE	= {
-                        {'Reward',		'KILLED_CIV'},--'TRADERLOOT'},
+                        {'Reward',		'TRADERLOOT'},--'TRADERLOOT'},
                         {'RewardCount',		'8'},--Will need to add at least 10 when updating
                     }
                 },
@@ -578,7 +578,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     PRECEDING_KEY_WORDS = 'Definitions',
                     SPECIAL_KEY_WORDS	= {'Id', 'TRADER_ESCORT'},
                     VALUE_CHANGE_TABLE	= {
-                        {'Reward',		'KILLED_CIV'},--'TRADERLOOT'},
+                        {'Reward',		'TRADERLOOT'},--'TRADERLOOT'},
                         {'RewardCount',		'4'},--Max 10
                     }
                 },
@@ -587,7 +587,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     PRECEDING_KEY_WORDS = 'Definitions',
                     SPECIAL_KEY_WORDS	= {'Id', 'SQUADRON_C'},
                     VALUE_CHANGE_TABLE	= {
-                        {'Reward',		'KILLED_CIV'},--'TRADERLOOT'},
+                        {'Reward',		'TRADERLOOT'},--'TRADERLOOT'},
                         {'RewardCount',		'4'},--Max 10
                     }
                 },
@@ -596,7 +596,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     PRECEDING_KEY_WORDS = 'Definitions',
                     SPECIAL_KEY_WORDS	= {'Id', 'SQUADRON_B'},
                     VALUE_CHANGE_TABLE	= {
-                        {'Reward',		'KILLED_CIV'},--'TRADERLOOT'},
+                        {'Reward',		'TRADERLOOT'},--'TRADERLOOT'},
                         {'RewardCount',		'5'},--Max 10
                     }
                 },
@@ -605,7 +605,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     PRECEDING_KEY_WORDS = 'Definitions',
                     SPECIAL_KEY_WORDS	= {'Id', 'SQUADRON_A'},
                     VALUE_CHANGE_TABLE	= {
-                        {'Reward',		'KILLED_CIV'},--'TRADERLOOT'},
+                        {'Reward',		'TRADERLOOT'},--'TRADERLOOT'},
                         {'RewardCount',		'6'},--Max 10
                     }                
                 },
@@ -614,7 +614,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     PRECEDING_KEY_WORDS = 'Definitions',
                     SPECIAL_KEY_WORDS	= {'Id', 'SQUADRON_S'},
                     VALUE_CHANGE_TABLE	= {
-                        {'Reward',		'KILLED_CIV'},--'TRADERLOOT'},
+                        {'Reward',		'TRADERLOOT'},--'TRADERLOOT'},
                         {'RewardCount',		'8'},--Max 10
                     }
                 },

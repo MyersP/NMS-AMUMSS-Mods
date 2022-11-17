@@ -28,8 +28,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TorchStrength",				"2"},	-- Original "4"
 								{"TorchOffsetY",				"1"},	-- Original "0.5"
 								{"TorchOffsetZ",				"-1"},	-- Original "-0.5							
-								--{"WarpsBetweenBattles",			"1"},	--Default 5? for freighter battles
-								{"HoursBetweenBattles",			"5"},	--Default 3? for freighter battles	
+								{"WarpsBetweenBattles",			"1"},	--Default 5? for freighter battles
+								{"HoursBetweenBattles",			"0"},	--Default 3? for freighter battles	
 								--Goes with in PERSONALIZED_BetterShipAI
 								--{"FreighterSpawnRate",					"100"},	--Default ?  for freighter battles
 								

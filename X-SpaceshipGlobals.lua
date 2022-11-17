@@ -23,27 +23,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MissileLaunchSpeed", 					"1200"},	--Default 120
 								{"FreightersSamePalette", 				"False"},	--Default false
 								{"WitnessSightRange", 					"3000"},	--Default 3000
-								{"FreighterAttackDisengageDistance",	"30000"},	--Default 3000
-								--{"FreighterSpawnRate",					"100"},	--Default ?  for freighter battles
-								--Goes with in PERSONALIZED-FastScan-MorePirates-8Tech
-								{"WarpsBetweenBattles",			"3"},	--Default 5 for freighter battles
-								{"HoursBetweenBattles",			"0"},	--Default 3 for freighter battles
-									
+								{"FreighterAttackDisengageDistance",	"30000"},	--Default 3000															
                                 
 								{"AbandonedSystemShipSpawnProbablity", 		"50"},		--Default 0  50 may have been to high
 								{"CrashedShipMinNonBrokenSlots", 			"10"},		--Default 3
 								{"CrashedShipBrokenSlotChance", 			"0.25"},	--Default 0.75  "0.02" did not notice change -0.001 did not change it either...
 								{"CrashedShipBrokenTechChance", 			"0.3"},	    --Default 0.7  "0.02" did not notice change -0.001 did not change it either...
 								{"CrashedShipRepairSlotCostIncreaseFactor", "0.3"},		--Default 1.3
-								{"CrashedShipGeneralCostDiscount", 			"0.1"},	--Default 0.7 "0.95" did not notice change
-								{"CrashedShipTechSlotsCostDiscount", 		"0.1"},	--Default 0.1 "0.95" did not notice change
+								{"CrashedShipGeneralCostDiscount", 			"2.1"},	--Default 0.7 "0.95" did not notice change
+								{"CrashedShipTechSlotsCostDiscount", 		"2.1"},	--Default 0.1 "0.95" did not notice change
                                 
                                 --Added in the Fast Locate Assistant for ship hunting
                                 {"MaxNumActiveTraders", 90},	-- Default 15 // Modded 104~520 depending on ship types
                                 {"FillUpOutposts", true},					-- Default false
 
                                 -- These settings allow ships to cycle in and out faster
-                                {"MinimumCircleTimeBeforeLanding", 3},		-- Default 5
+                                {"MinimumCircleTimeBeforeLanding", 2},		-- Default 5
                                 {"MinimumTimeBetweenOutpostLandings", 1},	-- Default 3
                                 {"DockWaitMinTime", 20},					-- Default 20
                                 {"DockWaitMaxTime", 30},					-- Default 60

@@ -436,6 +436,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie",
   ["MOD_MAINTENANCE"] = "Babscoole",
+  ["MOD_BATCHNAME"]	= "X-Signal Booster Pirate Rewards",
   ["NMS_VERSION"]     = NMSVersion,
   ["MODIFICATIONS"]   =
 	{

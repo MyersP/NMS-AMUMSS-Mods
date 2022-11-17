@@ -26,7 +26,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 ["PRECEDING_KEY_WORDS"] = "Stage",
                                 ["REPLACE_TYPE"] 		= "ALL",
                                 ["VALUE_MATCH"] 		= "10", --make ALL that are "0" equal(=) to "1"
+                                ["VALUE_CHANGE_TABLE"] 	= 
+                                {
+                                    {"Time",		"1" },
+                                }
+                            },
+                            {
+                                ["PRECEDING_KEY_WORDS"] = "Stage",
+                                ["REPLACE_TYPE"] 		= "ALL",
                                 ["VALUE_MATCH"] 		= "4", 
+                                ["VALUE_CHANGE_TABLE"] 	= 
+                                {
+                                    {"Time",		"1" },
+                                }
+                            },
+                            {
+                                ["PRECEDING_KEY_WORDS"] = "Stage",
+                                ["REPLACE_TYPE"] 		= "ALL",
                                 ["VALUE_MATCH"] 		= "3", 
                                 ["VALUE_CHANGE_TABLE"] 	= 
                                 {
