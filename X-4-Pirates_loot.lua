@@ -27,8 +27,8 @@ local function R_ProcTechRange(item)
 				[[<Property name="Group" value="]]..item.id..[["/>
 									<Property name="WeightedChanceNormal" value="10" />
 									<Property name="WeightedChanceRare" value="10" />
-									<Property name="WeightedChanceEpic" value="10" />
-									<Property name="WeightedChanceLegendary" value="10" />
+									<Property name="WeightedChanceEpic" value="5" />
+									<Property name="WeightedChanceLegendary" value="5" />
 									<Property name="ForceRelevant" value="False" />
 									<Property name="ForceQualityRelevant" value="False" />
 	]]
@@ -38,10 +38,10 @@ end
 local function R_ProcTechPirate(item)
 	local exml = 
 				[[ <Property name="Group" value="]]..item.id..[["/>
-									<Property name="WeightedChanceNormal" value="10" />
-									<Property name="WeightedChanceRare" value="10" />
-									<Property name="WeightedChanceEpic" value="15" />
-									<Property name="WeightedChanceLegendary" value="15" />
+									<Property name="WeightedChanceNormal" value="5" />
+									<Property name="WeightedChanceRare" value="5" />
+									<Property name="WeightedChanceEpic" value="10" />
+									<Property name="WeightedChanceLegendary" value="10" />
 									<Property name="ForceRelevant" value="False" />
 									<Property name="ForceQualityRelevant" value="False" />
 	]]
@@ -327,36 +327,36 @@ local new_reward = {
     {--- Trader loot    SHOULD BE AN UPDATE NOT AN ADD--TRADERLOOT Copy?-
 		id			= 'TRADERLOOT',--Current is -1 standing
 		replacement	= true,
-		choice		= 'SelectAlways',--SelectAlways
+		choice		= 'GiveAll',--SelectAlways
 		zeroseed	= true,
 		rewardlist	= {
 			--id					Min		Max		%		function
-			{id='WATER2',			n=150,	x=300,	c=40,	f=R_Substance},
-			{id='SPACEGUNK3',		n=90,	x=299,	c=80,	f=R_Substance},
-			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=20,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=20,	f=R_Product},
-			{id='SCRAP_GOODS',	    		x=1,	c=15,	f=R_Product},
-			{id='SCRAP_TECH',	    		x=1,	c=10,	f=R_Product},
-			{id='SCRAP_WEAP',	    		x=1,	c=5,	f=R_Product},
-			{id='TRA_ALLOY1',		n=15,	x=25,	c=100,	f=R_Product},
-			{id='TRA_MINERALS1',	n=15,	x=25,	c=100,	f=R_Product},
-			{id='TRA_COMMODITY2',	n=15,	x=25,	c=100,	f=R_Product},
-            {id='SALVAGE_TECH1',	n=3,	x=15,	c=50,	f=R_Product},
-			{id='SALVAGE_TECH2',	n=3,	x=10,	c=40,	f=R_Product},
-			{id='SALVAGE_TECH3',	n=3,	x=10,	c=40,	f=R_Product},
-			{id='SALVAGE_TECH4',	n=3,	x=8,	c=30,	f=R_Product},
-			{id='SALVAGE_TECH5',	n=1,	x=3,	c=20,	f=R_Product},
-			{id='SHIPBLOB_NAME_L',					c=20,	f=R_ProcTechRange},
-			{id='SHIPMINIGUN_NAME_L',				c=20,	f=R_ProcTechRange},
-			{id='SHIPSHOTGUN_NAME_L',				c=20,	f=R_ProcTechRange},
-			{id='SHIPGUN1_NAME_L',					c=20,	f=R_ProcTechRange},
-			{id='ION1_NAME_L',						c=20,	f=R_ProcTechRange},
-			{id='SHIPJUMP_NAME_L',					c=20,	f=R_ProcTechRange},
-			{id='LAUNCHER_NAME_L',					c=20,	f=R_ProcTechRange},
-			{id='SHIPSHIELD_NAME_L',				c=20,	f=R_ProcTechRange},
-			{id='DismantleTech',	r='Uncommon',	c=20,	f=R_Procedural},
-			{id='Salvage',			r='Uncommon',	c=100,	f=R_Procedural},
+			--{id='WATER2',			n=150,	x=300,	c=20,	f=R_Substance},
+			--{id='SPACEGUNK3',		n=90,	x=299,	c=40,	f=R_Substance},
+			{id='SHIPCHARGE',				x=1,	c=25,	f=R_Product},
+			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
+			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
+			{id='SCRAP_GOODS',	    		x=1,	c=8,	f=R_Product},
+			{id='SCRAP_TECH',	    		x=1,	c=5,	f=R_Product},
+			{id='SCRAP_WEAP',	    		x=1,	c=2,	f=R_Product},
+			{id='TRA_ALLOY1',		n=15,	x=25,	c=20,	f=R_Product},
+			{id='TRA_MINERALS1',	n=15,	x=25,	c=20,	f=R_Product},
+			{id='TRA_COMMODITY2',	n=15,	x=25,	c=20,	f=R_Product},
+            {id='SALVAGE_TECH1',	n=3,	x=15,	c=15,	f=R_Product},
+			{id='SALVAGE_TECH2',	n=3,	x=10,	c=10,	f=R_Product},
+			{id='SALVAGE_TECH3',	n=3,	x=10,	c=10,	f=R_Product},
+			{id='SALVAGE_TECH4',	n=3,	x=8,	c=10,	f=R_Product},
+			{id='SALVAGE_TECH5',	n=1,	x=3,	c=5,	f=R_Product},
+			{id='SHIPBLOB_NAME_L',					c=5,	f=R_ProcTechRange},
+			{id='SHIPMINIGUN_NAME_L',				c=5,	f=R_ProcTechRange},
+			{id='SHIPSHOTGUN_NAME_L',				c=5,	f=R_ProcTechRange},
+			{id='SHIPGUN1_NAME_L',					c=5,	f=R_ProcTechRange},
+			{id='ION1_NAME_L',						c=5,	f=R_ProcTechRange},
+			{id='SHIPJUMP_NAME_L',					c=5,	f=R_ProcTechRange},
+			{id='LAUNCHER_NAME_L',					c=5,	f=R_ProcTechRange},
+			{id='SHIPSHIELD_NAME_L',				c=5,	f=R_ProcTechRange},
+			{id='DismantleTech',	r='Uncommon',	c=5,	f=R_Procedural},
+			{id='Salvage',			r='Uncommon',	c=15,	f=R_Procedural},
 			{id='Specials',				n=10,  x=10, c=100,	f=R_Money},
 			{id='Nanites',				n=20,  x=30, c=100,	f=R_Money},
 		}
@@ -372,7 +372,7 @@ local new_reward = {
 			{id='SALVAGE_TECH6',	n=1,	x=8,	c=50,	f=R_Product},
 			{id='SENTINEL_LOOT',	n=1,	x=1,	c=45,	f=R_Product},
 			{id='ROBOT1',	        n=60,	x=80,	c=80,	f=R_Substance},
-			{id='DismantleTech',	r='Rare',		c=100,	f=R_Procedural},
+			{id='DismantleTech',	r='Rare',		c=50,	f=R_Procedural},
 			{id='Units',			n=90,   x=160,	c=100,	f=R_Money},
 			{id='Nanites',			n=90,	x=160,  c=100,	f=R_Money},
 			{id='Specials',			n=10,	x=10,	c=100,	f=R_Money},
@@ -380,34 +380,34 @@ local new_reward = {
 	},
     {--- pirate loot - normal level  SHOULD BE AN UPDATE NOT AN ADD ---
 		id			= 'PIRATELOOT',
-		choice 		= 'SelectAlways',--SelectAlways
+		choice 		= 'GiveAll',--SelectAlways  -- 'TryEach'==no loot dropped...
 		zeroseed 	= true,
 		replacement	= false,
 		rewardlist	= {
 			--id					Min		Max		%		function
-			{id='SHIPCHARGE',		    	x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=20,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=20,	f=R_Product},
-			{id='SCRAP_GOODS',	        	x=1,	c=5,	f=R_Product},
-			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},
-			{id='SCRAP_WEAP',	        	x=1,	c=15,	f=R_Product},
-			{id='SALVAGE_TECH3',	n=3,	x=10,	c=40,	f=R_Product},
-			{id='SALVAGE_TECH4',	n=3,	x=10,	c=40,	f=R_Product},
-			{id='SALVAGE_TECH5',	n=3,	x=8,	c=30,	f=R_Product},
-			{id='SALVAGE_TECH6',	n=1,	x=3,	c=20,	f=R_Product},			
-			{id='WATER2',			n=260,	x=360,	c=50,	f=R_Substance},
-			{id='EX_GREEN',			n=150,	x=250,	c=50,	f=R_Substance},
-			{id='EX_BLUE',			n=120,	x=220,	c=50,	f=R_Substance},
-			{id='SHIPBLOB_NAME_L',					c=50,	f=R_ProcTechPirate},
-			{id='SHIPMINIGUN_NAME_L',				c=10,	f=R_ProcTechPirate},
-			{id='SHIPSHOTGUN_NAME_L',				c=10,	f=R_ProcTechPirate},
-			{id='SHIPGUN1_NAME_L',					c=10,	f=R_ProcTechPirate},
-			{id='ION1_NAME_L',						c=10,	f=R_ProcTechPirate},
-			{id='SHIPJUMP_NAME_L',					c=10,	f=R_ProcTechPirate},
-			{id='LAUNCHER_NAME_L',					c=10,	f=R_ProcTechPirate},
-			{id='SHIPSHIELD_NAME_L',				c=10,	f=R_ProcTechPirate},
-			{id='Salvage',			r='Rare',		c=60,	f=R_Procedural},
-			{id='DismantleTech',	r='Rare',		c=80,	f=R_Procedural},
+			{id='SHIPCHARGE',		    	x=1,	c=25,	f=R_Product},
+			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
+			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
+			{id='SCRAP_GOODS',	        	x=1,	c=2,	f=R_Product},
+			{id='SCRAP_TECH',	        	x=1,	c=5,	f=R_Product},
+			{id='SCRAP_WEAP',	        	x=1,	c=8,	f=R_Product},
+			{id='SALVAGE_TECH3',	n=3,	x=10,	c=10,	f=R_Product},
+			{id='SALVAGE_TECH4',	n=3,	x=10,	c=10,	f=R_Product},
+			{id='SALVAGE_TECH5',	n=3,	x=8,	c=5,	f=R_Product},
+			{id='SALVAGE_TECH6',	n=1,	x=3,	c=5,	f=R_Product},			
+			--{id='WATER2',			n=260,	x=360,	c=25,	f=R_Substance},
+			--{id='EX_GREEN',			n=150,	x=250,	c=25,	f=R_Substance},
+			--{id='EX_BLUE',			n=120,	x=220,	c=25,	f=R_Substance},
+			{id='SHIPBLOB_NAME_L',					c=25,	f=R_ProcTechPirate},
+			{id='SHIPMINIGUN_NAME_L',				c=5,	f=R_ProcTechPirate},
+			{id='SHIPSHOTGUN_NAME_L',				c=5,	f=R_ProcTechPirate},
+			{id='SHIPGUN1_NAME_L',					c=5,	f=R_ProcTechPirate},
+			{id='ION1_NAME_L',						c=5,	f=R_ProcTechPirate},
+			{id='SHIPJUMP_NAME_L',					c=5,	f=R_ProcTechPirate},
+			{id='LAUNCHER_NAME_L',					c=5,	f=R_ProcTechPirate},
+			{id='SHIPSHIELD_NAME_L',				c=5,	f=R_ProcTechPirate},
+			{id='Salvage',			r='Rare',		c=5,	f=R_Procedural},
+			{id='DismantleTech',	r='Rare',		c=15,	f=R_Procedural},
 			{id='Units',			n=1800,	x=3000,	c=100,	f=R_Money},
 			{id='Nanites',			n=100,	x=200,	c=100,	f=R_Money},
 			{id='Specials',			n=10,	x=10,	c=100,	f=R_Money},
