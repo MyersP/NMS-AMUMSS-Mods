@@ -18,9 +18,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					 ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+					 ["MBIN_FILE_SOURCE"]  = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
 					 ["EXML_CHANGE_TABLE"] = 
-					 {                    
+					 {  
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","LASER"},--remove mining lazer
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Core",	"False"}
+							}
+						},       
 					-- --Jetpack
 						{ --JetpackTank
 						   ["SPECIAL_KEY_WORDS"] = {"ID", "JET1"},	

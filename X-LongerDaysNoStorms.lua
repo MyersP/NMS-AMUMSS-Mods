@@ -97,18 +97,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SafeSkyMaxIndex",			            "342"},	    --Default 5     
                                 {"FrozenSkyMaxIndex",				    "342"},	    --Default 0      
                                 {"StormScreenFilterFadeTime",		    "2"},	    --Default 1     
-                                {"MinTimeBetweenStormsLow",            "25"},--"9999999"},   --Default 900   -Lowkie from ? => 9999999
-                                {"MaxTimeBetweenStormsLow",            "100"},--"9999999"},   --Default 2400  -Lowkie from ? => 9999999
-                                {"MinTimeBetweenStormsHigh",           "25"},--"9999999"},	--Default 120   -Lowkie from 480 => 9999999
-                                {"MaxTimeBetweenStormsHigh",           "100"},--"9999999"},   --Default 620   -Lowkie from 2500 => 9999999
-                                {"MinTimeBetweenStormsExtremeFallback","25"},--"9999999"},   --Default 240   -Lowkie from 960 => 9999999
-                                {"MaxTimeBetweenStormsExtremeFallback","100"},--"9999999"},   --Default 620   -Lowkie from 2500 => 9999999
+                                --{"MinTimeBetweenStormsLow",            "20"},--"9999999"},   --Default 900   -Lowkie from ? => 9999999
+                                --{"MaxTimeBetweenStormsLow",            "25"},--"9999999"},   --Default 2400  -Lowkie from ? => 9999999
+                                --{"MinTimeBetweenStormsHigh",           "25"},--"9999999"},	--Default 120   -Lowkie from 480 => 9999999
+                                --{"MaxTimeBetweenStormsHigh",           "50"},--"9999999"},   --Default 620   -Lowkie from 2500 => 9999999
+                                --{"MinTimeBetweenStormsExtremeFallback","25"},--"9999999"},   --Default 240   -Lowkie from 960 => 9999999
+                                --{"MaxTimeBetweenStormsExtremeFallback","50"},--"9999999"},   --Default 620   -Lowkie from 2500 => 9999999
                                 {"StormWarningTime",				    "10"},      --Default 25
                                 {"StormTransitionTime",				    "10"},      --Default 20                                 
-                                {"MinStormLengthLow",                   "300"},--"1"},        --120
-                                {"MaxStormLengthLow",                   "300"},--"1"},        --180
-                                {"MinStormLengthHigh",                  "300"},--"1"},        --150
-                                {"MaxStormLengthHigh",                  "300"},--"1"},        --320
+                                --{"MinStormLengthLow",                   "60"},--"1"},        --120
+                                --{"MaxStormLengthLow",                   "120"},--"1"},        --180
+                                --{"MinStormLengthHigh",                  "9999"},--"1"},        --150
+                                --{"MaxStormLengthHigh",                  "9999"},--"1"},        --320
                                 {"MaxCloudCover",				        "0.6"},     --Default 0.8
                                 {"MaxStormCloudCover",				    "0.7"},     --Default 0.8
                                 {"CloudCoverSmoothTime",                "20"},      --Default 10
