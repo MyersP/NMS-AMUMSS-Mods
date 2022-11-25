@@ -175,9 +175,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--|----------------------------------------------------------------------------------------
 
 				{
-					["MBIN_FILE_SOURCE"]	= {
-						"MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN",
-					},
+					["MBIN_FILE_SOURCE"]	= {"MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN"},
 					["EXML_CHANGE_TABLE"]	=
 					{
 						{

@@ -529,7 +529,7 @@ end
 EASY = "2" --"2"
 HARD = "4" --"4"
 Five="5"
-Six="6"
+--Six="6"
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'X-Pirates loot.pak',
 	MOD_AUTHOR			= 'Lowkie',
@@ -542,11 +542,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             MBIN_FILE_SOURCE 	= "METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN",
             EXML_CHANGE_TABLE 	= AddNewRewardsToChangeTable()
         },
-        {
+        {--Remove faction loss should be behind flag, 
             MBIN_FILE_SOURCE	= 'METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN',
             EXML_CHANGE_TABLE	=
                     {            
-                        {
+                        {--Killed_Civ is triggered when the traders, 
+						--all non pirate or palice ships are killed. 
+						--This is in conjuction to the below loot list change
+						--Use as a way to diversify the loot using two lists, when no faction loss wanted.
 							["SPECIAL_KEY_WORDS"]  = {"Id", "KILLED_CIV"},
 							["REMOVE"] = "SECTION",
 						}, 

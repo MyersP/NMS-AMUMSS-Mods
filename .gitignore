@@ -5,6 +5,10 @@ data/*
 .git
 .vs
 .vs/*Sounds/Build_Sound_Mod.lnk
+UltraBaseBuilding/++++++BuildFrame_RecTUM.lua
+UltraBaseBuilding/+++++KibblesNBits_METADATA.lua
+UltraBaseBuilding/UltraBaseBuilding.lua
+~~~~BuildFrame_Comp.pak
 Sounds/Depricated Or combined in new
 Sounds/Depricated_Or_combined_in_new
 Sounds/Localized_BNK_files
@@ -19,6 +23,7 @@ Sounds/Silent_Solar_Sail_Ships_Mechanics
 Sounds/Silent_Some_Inventory_Sounds
 Sounds/Silent_Sounds_ALL-In-One
 Sounds/Silent_Ship_Pulse_Mini_Warp
+Sounds/Silent_SpaceWalking
 Sounds/Silent_TESTING_SOUNDS
 Sounds/WORKING
 UltraBaseBuilding
@@ -26,7 +31,3 @@ Others_mods
 Extra_Files_Needed/X-Black carbon true icons.lua
 Extra_Files_Needed/ModExtraFilesToInclude _zBlack crystals true icons NO WARP
 REDMAS_GAME_OVERHAUL_GENERATOR
-UltraBaseBuilding/++++++BuildFrame_RecTUM.lua
-UltraBaseBuilding/+++++KibblesNBits_METADATA.lua
-UltraBaseBuilding/UltraBaseBuilding.lua
-~~~~BuildFrame_Comp.pak

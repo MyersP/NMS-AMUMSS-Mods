@@ -596,7 +596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "~~~RecTUM.pak",
 ["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
 ["MOD_AUTHOR"]				= "WinderTP, Babscoole",
-["MOD_DESCRIPTION"]			= "Recategorisation Trimming Utility for Build Menu",
+["MOD_DESCRIPTION"]			= "Recategorization Trimming Utility for Build Menu",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
 	{
