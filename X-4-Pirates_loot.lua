@@ -142,49 +142,6 @@ end
 -- 			]]	
 -- end 
 
--- local function R_Alien(item)
--- 	return R_TableItem(item, 
--- 	'GcRewardStanding.xml',
--- 				[[<Property name="Race" value="GcAlienRace.xml">
--- 												<Property name="AlienRace" value="]]..item.id..[["/>
--- 									</Property>
--- 				]]
---     )
--- end
-          
---[[ local E_ = {
-	-- ProceduralProductCategoryEnum
-	LOT='Loot',
-	FRH='FreighterTechHyp',
-	FRS='FreighterTechSpeed',
-	FRF='FreighterTechFuel',
-	FRT='FreighterTechTrade',
-	FRC='FreighterTechCombat',
-	FRM='FreighterTechMine',
-	FRE='FreighterTechExp',
-	DBI='DismantleBio',
-	DTC='DismantleTech',
-	DDT='DismantleData',
-	BIO='BioSample',
-	BNS='Bones',
-	FOS='Fossil',
-	SLT='SeaLoot',
-	SHR='SeaHorror',
-	SPB='SpaceBones',
-	SPH='SpaceHorror',
-	SLV='Salvage',
-
-	-- MultiItemRewardTypeEnum
-	PDT='Product',	SBT='Substance',	PRP='ProcProduct',
-	-- PRT='ProcTech', not supported
-
-	-- RarityEnum
-	C='Common',		U='Uncommon',		R='Rare',
-
-	-- Money --Should set MONEY MONEY_S MONEY_M  MONEY_L  MONEY_XL
-	UT='Units',		NN='Nanites',		HG='Specials', -- quicksilver
-}
- ]]
 local new_reward = { 
 --[[     --UI_SALVAGE_TECH 
     --SALVAGE_TECH1  = Once Useful springs     1k UT
@@ -197,93 +154,6 @@ local new_reward = {
     --SALVAGE_TECH8  = Subatomic Regulator   800k UT
     --SALVAGE_TECH9  = Compressed Iridum     3mil UT
     --SALVAGE_TECH10 = AI Valves            50mil UT ]]
---[[     
-    {--- Squadron loot - easy level ---
-		id			= 'SQUADRONLOOT_CB',
-		choice		= 'GiveAll',--SelectAlways
-		rewardlist	= {
-			--id					Min		Max		%		function
-			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='WEAPON_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
-			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			--{id='GcRewardSalvageShip.xml',	        	x=1,	c=100,	f=R_SalvageItem},
-            {id='None',	            n=1,	x=1,	c=100,	f=R_Alien},		
-			{id=E_.SLV,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.UT,				n=500  ,x=1000, c=100,	f=R_Money},
-			{id=E_.NN,				n=50,  x=100,	c=100,	f=R_Money},
-			{id=E_.HG,				n=10,  x=10,	c=100,	f=R_Money},
-		}
-	},
-    {--- Squadron loot - normal level ---
-		id			= 'SQUADRONLOOT_A',
-		choice		= 'GiveAll',--SelectAlways
-		rewardlist	= {
-			--id					Min		Max		%		function
-			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='WEAPON_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
-			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_WEAP',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			--{id='GcRewardSalvageShip.xml',	        	x=1,	c=100,	f=R_SalvageItem},
-            {id='None',	            n=1,	x=1,	c=100,	f=R_Alien},
-			{id=E_.SLV,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.UT,				n=1000, x=2000, c=100,	f=R_Money},
-			{id=E_.NN,				n=100,  x=200,  c=100,	f=R_Money},
-			{id=E_.HG,				n=10,  x=10,	c=100,	f=R_Money},
-		}
-	},
-    {--- Squadron loot - hard level ---
-		id			= 'SQUADRONLOOT_S',
-		choice		= 'GiveAll',--SelectAlways
-		rewardlist	= {
-			--id					Min		Max		%		function
-			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='WEAPON_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
-			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_WEAP',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			--{id='GcRewardSalvageShip.xml',	        	x=1,	c=100,	f=R_SalvageItem},
-            {id='None',	            n=1,	x=1,	c=100,	f=R_Alien},
-			{id=E_.SLV,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.UT,				n=2000, x=3000, c=100,	f=R_Money},
-			{id=E_.NN,				n=150,  x=300,  c=100,	f=R_Money},
-			{id=E_.HG,				n=10,  x=10,	c=100,	f=R_Money},
-		}
-	},
-    {--- pirate loot - easy level ---
-		id			= 'PIRATELOOT_EASY',
-		choice		= 'GiveAll',--SelectAlways
-		zeroseed 	= true,
-		rewardlist	= {
-			--id					Min		Max		%		function
-			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='WATER2',			n=260,	x=360,	c=40,	f=R_Substance},
-			{id='EX_GREEN',			n=150,	x=250,	c=40,	f=R_Substance},
-			{id='EX_BLUE',			n=120,	x=220,	c=40,	f=R_Substance},
-			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_WEAP',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			--{id='GcRewardSalvageShip.xml',	        	x=1,	c=100,	f=R_SalvageItem},
-            {id='None',	            n=1,	x=1,	c=100,	f=R_Alien},
-			{id=E_.SLV,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.UT,				n=1000  ,x=2000,c=100,	f=R_Money},
-			{id=E_.NN,				n=50,    x=100, c=100,	f=R_Money},
-			{id=E_.HG,				n=10,  x=10,	c=100,	f=R_Money},
-		}
-	},
-	]]
     {--- pirate loot - hard level ---
 		id			= 'PIRATELOOT_HARD',
 		choice		= 'GiveAll',--SelectAlways
@@ -295,136 +165,51 @@ local new_reward = {
 			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=12,	f=R_Product},
  			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},
 			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},
-			{id='SCRAP_WEAP',	        	x=1,	c=10,	f=R_Product},
-			{id='SALVAGE_TECH3',	n=5,	x=15,	c=13,	f=R_Product},
-			{id='SALVAGE_TECH4',	n=5,	x=15,	c=12,	f=R_Product},
-			{id='SALVAGE_TECH5',	n=4,	x=10,	c=11,	f=R_Product},
-			{id='SALVAGE_TECH6',	n=4,	x=10,	c=10,	f=R_Product},
-			{id='SALVAGE_TECH7',	n=2,	x=3,	c=9,	f=R_Product},	
-			{id='SALVAGE_TECH8',	n=1,	x=1,	c=3,	f=R_Product},			
-			--{id='WATER2',			n=260,	x=360,	c=25,	f=R_Substance},
-			--{id='EX_GREEN',			n=150,	x=250,	c=25,	f=R_Substance},
-			--{id='EX_BLUE',			n=120,	x=220,	c=25,	f=R_Substance},
-			--{id='SHIPBLOB_NAME_L',					c=5,	f=R_ProcTechPirate},
-			{id='SHIPMINIGUN_NAME_L',				c=8,	f=R_ProcTechPirate},
-			{id='SHIPSHOTGUN_NAME_L',				c=8,	f=R_ProcTechPirate},
-			{id='SHIPGUN1_NAME_L',					c=8,	f=R_ProcTechPirate},
-			--{id='ION1_NAME_L',						c=5,	f=R_ProcTechPirate},
-			--{id='SHIPJUMP_NAME_L',					c=5,	f=R_ProcTechPirate},
-			--{id='LAUNCHER_NAME_L',					c=5,	f=R_ProcTechPirate},
+			{id='SCRAP_WEAP',	        	x=1,	c=3,	f=R_Product},
+			{id='SALVAGE_TECH3',	n=5,	x=15,	c=15,	f=R_Product},
+			{id='SALVAGE_TECH4',	n=5,	x=15,	c=15,	f=R_Product},
+			{id='SALVAGE_TECH5',	n=4,	x=10,	c=15,	f=R_Product},
+			{id='SALVAGE_TECH6',	n=4,	x=10,	c=15,	f=R_Product},
+			{id='SALVAGE_TECH7',	n=2,	x=3,	c=11,	f=R_Product},	
+			{id='SALVAGE_TECH8',	n=1,	x=1,	c=5,	f=R_Product},
+			{id='SHIPMINIGUN_NAME_L',				c=5,	f=R_ProcTechPirate},
+			{id='SHIPSHOTGUN_NAME_L',				c=5,	f=R_ProcTechPirate},
+			{id='SHIPGUN1_NAME_L',					c=5,	f=R_ProcTechPirate},
 			{id='SHIPSHIELD_NAME_L',				c=5,	f=R_ProcTechPirate},
 			{id='Salvage',			r='Rare',		c=8,	f=R_Procedural},
 			{id='DismantleTech',	r='Rare',		c=15,	f=R_Procedural},
-			--{id='Units',			n=1800,	x=3000,	c=100,	f=R_Money},
-			--{id='Nanites',			n=100,	x=200,	c=100,	f=R_Money},
-			--{id='Specials',			n=10,	x=10,	c=100,	f=R_Money},
-			--{id='misc',				c=100,	f=R_test},
+			{id='Specials',			n=10,	x=10,	c=100,	f=R_Money},
 		}
 	},
-	--[[
-    {--- pirate loot - building raid -RAID_DOGFIGHT-RAID_BUILDING Give Pirate loot or trader loot-
-		id			= 'RAIDLOOT',
-		choice		= 'GiveAll',--SelectAlways
-		zeroseed 	= true,
-		rewardlist	= {
-			--id					Min		Max		%		function
-			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='WATER2',			n=260,	x=360,	c=30,	f=R_Substance},
-			{id='EX_GREEN',			n=150,	x=250,	c=30,	f=R_Substance},
-			{id='EX_BLUE',			n=120,	x=220,	c=30,	f=R_Substance},
-			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_WEAP',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			--{id='GcRewardSalvageShip.xml',	        	x=1,	c=100,	f=R_SalvageItem},
-            {id='None',	            n=1,	x=1,	c=100,	f=R_Alien},
-			{id=E_.SLV,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.DBI,				r=E_.U,			c=100,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.U,			c=100,	f=R_Procedural},
-			{id=E_.UT,				n=2500,x=3500,c=100,	f=R_Money},
-			{id=E_.NN,				n=150,	x=300,	c=100,	f=R_Money},
-			{id=E_.HG,				n=10,  x=10,	c=100,	f=R_Money},
-		}
-	}, 
-    {--- Pirate Bounty 3 loot  SHOULD BE AN UPDATE NOT AN ADD---
-		id			= 'PIRATE_BOUNTY3',
-		choice		= 'GiveAll',--SelectAlways
-		replacement	= true,
-		rewardlist	= {
-			--id					Min		Max		%		function
-			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='WEAPON_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_WEAP',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			--{id='GcRewardSalvageShip.xml',	        	x=1,	c=100,	f=R_SalvageItem},
-			{id='None',	            n=1,	x=1,	c=100,	f=R_Alien},
-			{id=E_.SLV,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.UT,				n=10000, x=25000, c=100,	f=R_Money},
-			{id=E_.NN,				n=50,  x=100,  c=100,	f=R_Money},
-			{id=E_.HG,				n=10,  x=10,	c=100,	f=R_Money},
-		}
-	}, 
-    {--- Pirate Bounty 1 loot   SHOULD BE AN UPDATE NOT AN ADD------
-		id			= 'PIRATE_BOUNTY1',
-		choice		= 'GiveAll',--SelectAlways
-		replacement	= true,
-		rewardlist	= {
-			--id					Min		Max		%		function
-			{id='SHIPCHARGE',				x=1,	c=50,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='WEAPON_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=15,	f=R_Product},
-			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			{id='SCRAP_WEAP',	        	x=1,	c=10,	f=R_Product},--Original Loot
-			--{id='GcRewardSalvageShip.xml',	        	x=1,	c=100,	f=R_SalvageItem},
-			{id='SPACEGUNK3',		n=80,	x=150,	c=80,	f=R_Substance},
-			{id=E_.SLV,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.C,			c=100,	f=R_Procedural},
-			{id=E_.HG,				n=10,  x=10,	c=100,	f=R_Money},
-		}
-	},]]
     {--- Trader loot    SHOULD BE AN UPDATE NOT AN ADD--TRADERLOOT Copy?-
 		id			= 'TRADERLOOT',--Current is -1 standing
 		replacement	= true,
-		choice		= 'GiveAll',--SelectAlways
+		choice		= 'GiveAll',---By limited in amount used by the caller this works good.
 		zeroseed	= true,
 		rewardlist	= {
 			--id					Min		Max		%		function
 			--{id='WATER2',			n=150,	x=300,	c=20,	f=R_Substance},
 			--{id='SPACEGUNK3',		n=90,	x=299,	c=40,	f=R_Substance},
 			{id='SHIPCHARGE',				x=1,	c=35,	f=R_Product},
-			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
+			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=8,	f=R_Product},
+			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=5,	f=R_Product},
 			{id='SCRAP_GOODS',	    		x=1,	c=10,	f=R_Product},
 			{id='SCRAP_TECH',	    		x=1,	c=10,	f=R_Product},
-			{id='SCRAP_WEAP',	    		x=1,	c=5,	f=R_Product},
+			{id='SCRAP_WEAP',	    		x=1,	c=2,	f=R_Product},
 			{id='TRA_ALLOY1',		n=15,	x=25,	c=15,	f=R_Product},
 			{id='TRA_MINERALS1',	n=15,	x=25,	c=15,	f=R_Product},--I dislike these hard to sell, then sell red still ++
 			{id='TRA_COMMODITY2',	n=15,	x=25,	c=15,	f=R_Product},
             {id='SALVAGE_TECH1',	n=8,	x=15,	c=10,	f=R_Product},
 			{id='SALVAGE_TECH2',	n=6,	x=12,	c=10,	f=R_Product},
-			{id='SALVAGE_TECH3',	n=5,	x=10,	c=8,	f=R_Product},
+			{id='SALVAGE_TECH3',	n=5,	x=10,	c=10,	f=R_Product},
 			{id='SALVAGE_TECH4',	n=4,	x=8,	c=8,	f=R_Product},
-			{id='SALVAGE_TECH5',	n=2,	x=5,	c=5,	f=R_Product},
-			--{id='SHIPBLOB_NAME_L',					c=5,	f=R_ProcTechRange},
-			--{id='SHIPMINIGUN_NAME_L',				c=5,	f=R_ProcTechRange},
-			--{id='SHIPSHOTGUN_NAME_L',				c=5,	f=R_ProcTechRange},
-			--{id='SHIPGUN1_NAME_L',					c=5,	f=R_ProcTechRange},
-			{id='ION1_NAME_L',						c=5,	f=R_ProcTechRange},
-			{id='SHIPJUMP_NAME_L',					c=5,	f=R_ProcTechRange},
-			--{id='LAUNCHER_NAME_L',					c=5,	f=R_ProcTechRange},
-			{id='SHIPSHIELD_NAME_L',				c=5,	f=R_ProcTechRange},
-			{id='DismantleTech',	r='Uncommon',	c=10,	f=R_Procedural},
+			{id='SALVAGE_TECH5',	n=2,	x=5,	c=8,	f=R_Product},
+			{id='ION1_NAME_L',						c=1,	f=R_ProcTechRange},
+			{id='SHIPJUMP_NAME_L',					c=2,	f=R_ProcTechRange},
+			{id='SHIPSHIELD_NAME_L',				c=2,	f=R_ProcTechRange},
+			{id='DismantleTech',	r='Uncommon',	c=5,	f=R_Procedural},
 			{id='Salvage',			r='Uncommon',	c=15,	f=R_Procedural},
-			--{id='Specials',				n=10,  x=10, c=100,	f=R_Money},
-			--{id='Nanites',				n=20,  x=30, c=100,	f=R_Money},
-			--{id='misc',				c=100,	f=R_test},			
+			{id='Specials',				n=10,  x=10, c=100,	f=R_Money},
 		}
 	},   
     {--- Police loot    SHOULD BE AN UPDATE NOT AN ADD---
@@ -439,49 +224,35 @@ local new_reward = {
 			{id='SENTINEL_LOOT',	n=1,	x=1,	c=45,	f=R_Product},
 			{id='ROBOT1',	        n=60,	x=80,	c=80,	f=R_Substance},
 			{id='DismantleTech',	r='Rare',		c=50,	f=R_Procedural},
-			--{id='Units',			n=90,   x=160,	c=100,	f=R_Money},
-			--{id='Nanites',			n=90,	x=160,  c=100,	f=R_Money},
+			{id='Nanites',			n=90,	x=160,  c=100,	f=R_Money},
 			{id='Specials',			n=10,	x=10,	c=100,	f=R_Money},
 		}
 	},
     {--- pirate loot - normal level  SHOULD BE AN UPDATE NOT AN ADD ---
 		id			= 'PIRATELOOT',
-		choice 		= 'GiveAll',--SelectAlways  --Note this should be called in the amount that is passed in below
-		-- 'TryEach'==no loot dropped (used more like a give all, but all only have two options a Tech or Subs with resources or Words )
-		--Select==1 thats all 1 
-		--GiveAll does not seem to look at the % at all..
-		--TryFirst_ThenSelectAlways?? was able to get more of from one ship nothing from 3 others
+		choice 		= 'GiveAll',--By limited in amount used by the caller this works good.
 		zeroseed 	= true,
 		replacement	= false,
 		rewardlist	= {
 			--id					Min		Max		%		function
 			{id='SHIPCHARGE',		    	x=1,	c=35,	f=R_Product},
 			{id='SHIP_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
-			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=10,	f=R_Product},
+			{id='FREI_INV_TOKEN',	n=1,	x=1,	c=5,	f=R_Product},
  			{id='SCRAP_GOODS',	        	x=1,	c=10,	f=R_Product},
 			{id='SCRAP_TECH',	        	x=1,	c=10,	f=R_Product},
-			{id='SCRAP_WEAP',	        	x=1,	c=10,	f=R_Product},
-			{id='SALVAGE_TECH3',	n=3,	x=10,	c=10,	f=R_Product},
-			{id='SALVAGE_TECH4',	n=3,	x=10,	c=9,	f=R_Product},
-			{id='SALVAGE_TECH5',	n=4,	x=10,	c=8,	f=R_Product},
-			{id='SALVAGE_TECH6',	n=3,	x=5,	c=7,	f=R_Product},			
-			--{id='WATER2',			n=260,	x=360,	c=25,	f=R_Substance},
-			--{id='EX_GREEN',			n=150,	x=250,	c=25,	f=R_Substance},
-			--{id='EX_BLUE',			n=120,	x=220,	c=25,	f=R_Substance},
-			{id='SHIPBLOB_NAME_L',					c=8,	f=R_ProcTechPirate},
-			{id='SHIPMINIGUN_NAME_L',				c=8,	f=R_ProcTechPirate},
-			{id='SHIPSHOTGUN_NAME_L',				c=8,	f=R_ProcTechPirate},
-			{id='SHIPGUN1_NAME_L',					c=8,	f=R_ProcTechPirate},
-			--{id='ION1_NAME_L',						c=5,	f=R_ProcTechPirate},
-			--{id='SHIPJUMP_NAME_L',					c=5,	f=R_ProcTechPirate},
-			--{id='LAUNCHER_NAME_L',					c=5,	f=R_ProcTechPirate},
-			{id='SHIPSHIELD_NAME_L',				c=8,	f=R_ProcTechPirate},
+			{id='SCRAP_WEAP',	        	x=1,	c=3,	f=R_Product},
+			{id='SALVAGE_TECH3',	n=3,	x=10,	c=15,	f=R_Product},
+			{id='SALVAGE_TECH4',	n=3,	x=10,	c=15,	f=R_Product},
+			{id='SALVAGE_TECH5',	n=4,	x=10,	c=15,	f=R_Product},
+			{id='SALVAGE_TECH6',	n=3,	x=5,	c=15,	f=R_Product},
+			{id='SHIPBLOB_NAME_L',					c=3,	f=R_ProcTechPirate},
+			{id='SHIPMINIGUN_NAME_L',				c=3,	f=R_ProcTechPirate},
+			{id='SHIPSHOTGUN_NAME_L',				c=3,	f=R_ProcTechPirate},
+			{id='SHIPGUN1_NAME_L',					c=3,	f=R_ProcTechPirate},
+			{id='SHIPSHIELD_NAME_L',				c=4,	f=R_ProcTechPirate},
 			{id='Salvage',			r='Rare',		c=10,	f=R_Procedural},
 			{id='DismantleTech',	r='Rare',		c=15,	f=R_Procedural},
-			--{id='Units',			n=1800,	x=3000,	c=100,	f=R_Money},
-			--{id='Nanites',			n=100,	x=200,	c=100,	f=R_Money},
-			--{id='Specials',			n=10,	x=10,	c=100,	f=R_Money},
-			--{id='misc',				c=100,	f=R_test},
+			{id='Specials',			n=10,	x=10,	c=100,	f=R_Money},
 		}
 	},
 }
@@ -526,9 +297,9 @@ local function AddNewRewardsToChangeTable()
 	})
 	return T
 end
-EASY = "2" --"2"
-HARD = "4" --"4"
-Five="5"
+EASY = "3" --"2"
+HARD = "5" --"4"
+EXTRA="6"
 --Six="6"
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'X-Pirates loot.pak',
@@ -547,9 +318,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             EXML_CHANGE_TABLE	=
                     {            
                         {--Killed_Civ is triggered when the traders, 
-						--all non pirate or palice ships are killed. 
+						--all non pirate or police ships are killed. 
 						--This is in conjuction to the below loot list change
-						--Use as a way to diversify the loot using two lists, when no faction loss wanted.
+						--Use as a way to diversify the loot using two lists, when no faction loss wanted?
 							["SPECIAL_KEY_WORDS"]  = {"Id", "KILLED_CIV"},
 							["REMOVE"] = "SECTION",
 						}, 
@@ -639,7 +410,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     SPECIAL_KEY_WORDS	= {'Id', 'TRADER'},
                     VALUE_CHANGE_TABLE	= {
                         {'Reward',		'TRADERLOOT'},--'TRADERLOOT'},
-                        {'RewardCount',		Five},--5
+                        {'RewardCount',		EXTRA},--5
                     }
                 },
                 {--GOOD
@@ -684,7 +455,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     SPECIAL_KEY_WORDS	= {'Id', 'SQUADRON_S'},
                     VALUE_CHANGE_TABLE	= {
                         {'Reward',		'PIRATELOOT_HARD'},
-                        {'RewardCount',		Five},--8 Max ~20
+                        {'RewardCount',		EXTRA},--8 Max ~20
                     }
                 },
             }
